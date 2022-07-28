@@ -29,7 +29,7 @@ php artisan db:seed
 php artisan serve
 ```
 
-You can use example user which is created
+You can use example user which is already created by database seeder.
 ```
 Email: admin@admin.com
 Password: password
