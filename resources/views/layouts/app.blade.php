@@ -68,13 +68,8 @@
 
         <main class="py-4">
             <div class="container">
-                @if($errors->any())
-                    <div class="alert alert-danger" role="alert">
-                        <ul class="mb-0">
-                            {!! implode('', $errors->all('<li>:message</li>')) !!}
-                        </ul>
-                    </div>
-                @endif
+                @include('partials.page-alert')
+                @include('partials.form-errors')
                 @yield('content')
             </div>
         </main>

@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <form role="form" action="{{ route('books.store') }}" method="POST" enctype="multipart/form-data">
+    <form role="form" action="{{ route('books.update', $book) }}" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_method" value="PUT">
         @csrf
+
         <div class="card">
             <div class="card-header">
                 Edit Book
