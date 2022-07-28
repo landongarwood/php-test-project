@@ -28,3 +28,9 @@ php artisan db:seed
 ```
 php artisan serve
 ```
+
+You can use example user which is created
+```
+Email: admin@admin.com
+Password: password
+```
