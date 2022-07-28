@@ -23,4 +23,5 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('books', BooksController::class);
+    Route::get('books/{book}/delete/', ['as' => 'books.confirm-delete', 'uses' => '\App\Http\Controllers\BooksController@confirmDelete']);
 });
